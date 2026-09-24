@@ -1,0 +1,1132 @@
+ELEMENT 26 — THE WRITING, IN WHOLE PARAGRAPHS
+============================================
+Generated from index.html (app version 11.8).
+
+This is the subset of the app's text worth rewriting: every block that is MORE THAN ONE
+SENTENCE and stands on its own. Nothing in here is a fragment stitched together with
+other fragments at runtime, so you can rewrite each one freely — split it, join it,
+shorten it — without breaking a sentence somewhere else.
+
+  • Edit the text under each [T####] id. Leave the id lines exactly as they are.
+  • Keep anything inside ${ } as written — those are values the app fills in
+    (${esc(e.name)} the exercise, ${fmtLoad(e.weight)} a weight with your unit).
+    Move them around a sentence freely, or delete one you don't want shown.
+  • Keep <b> and <br> if you want the emphasis or the line break; delete them if not.
+  • Delete entries you don't want to change. Anything missing is left as it is.
+  • "same text in N places" means one string used several times — edit it once.
+
+The single words, buttons, labels and joined-up fragments are in the full export
+(element26-copy.txt) if you want them later.
+
+
+==========================================================================
+TRAINING DAYS, SPLIT AND REST CREDITS
+==========================================================================
+
+[T0003]  line 3958
+Every muscle, every session. The most forgiving way to train: miss a day and nothing goes untrained for long.
+
+[T0005]  line 3968
+Two upper-body days, two lower. Enough room per session to train a muscle properly, twice a week each.
+
+[T0006]  line 3969
+Best all-round balance of results and time. A safe default if you are unsure.
+
+[T0007]  line 3979
+Pressing, pulling, and legs, one day each. Simple to follow and easy to fit around a busy week.
+
+[T0009]  line 3989
+The full six-day rotation, each muscle trained twice a cycle. The highest-volume option here, and the one that asks the most of your recovery.
+
+[T0011]  line 4002
+Chest, back, shoulders, arms, legs. Each muscle gets a whole session, but only once a cycle.
+
+[T0012]  line 4003
+Best if you enjoy long focused sessions. Trains each muscle less often than the options above.
+
+
+==========================================================================
+GLOSSARY AND IN-APP EXPLANATIONS
+==========================================================================
+
+[T0020]  line 4501
+Maximum Recoverable Volume: the most a muscle can recover from. Past it, sets cost fatigue but buy no growth.
+
+[T0021]  line 4502
+A set taken close enough to failure to count, roughly RPE 7 or above. Warm-ups don't.
+
+[T0022]  line 4503
+This week's load divided by your recent 4-week average. Over 1.5x is the classic injury spike.
+
+[T0026]  line 4507
+Is this muscle progressing? Last 3 weeks of strength and volume against the 3 before.
+
+[T0027]  line 4508
+Five load-based warning flags. A training-load signal, not a diagnosis.
+
+[T0028]  line 4509
+Giving your body slightly more than last time. The one rule that makes training work.
+
+[T0035]  line 4516
+Go to failure, rest 15-20 seconds, go again. Repeat.
+
+[T0039]  line 4520
+How long to wait between sets. Depends on how hard the set was, not one number for everything.
+
+[T0040]  line 4521
+How many reps you lose from your first set to your last at the same weight. ~25% is normal.
+
+[T0041]  line 4522
+How many working sets you get through per hour. 15-20 is brisk and focused.
+
+[T0044]  line 4525
+Reps In Reserve: how many more reps you could have done. RIR 2 means you stopped two short.
+
+[T0045]  line 4526
+Training to make muscle bigger, as opposed to purely stronger. Moderate reps, plenty of sets.
+
+[T0055]  line 4646
+All three are counted in <b>${term("hardset","hard sets")} per muscle per week</b>. Three sets of bench press count as 3 chest sets, and partial credit goes to your front delts and triceps, because they did real work too.
+
+[T0056]  line 4646
+These landmarks come from the volume-landmark framework popularised by Mike Israetel and Renaissance Periodization. They're <b>population averages with wide individual variation</b>, treat them as a starting frame, not a law. Yours may sit higher or lower.
+
+[T0058]  line 4660
+<b>RPE</b> is how hard a set felt, on a 1-10 scale. What it really measures is <b>how many reps you had left</b>.
+
+[T0061]  line 4660
+It's the single most useful number you can log. Weight and reps say what you lifted; RPE says how close to your limit it was, which is what actually decides whether the set grew anything.
+
+[T0064]  line 4672
+Below MEV you're maintaining at best, even if the sessions feel brutal. Effort doesn't substitute for volume here, a muscle needs a certain amount of total work per week before it has a reason to adapt.
+
+[T0065]  line 4672
+This is the line the Body tab's <b>weak point detection</b> uses. If a muscle sits under its MEV two weeks running, it gets flagged, because that's a muscle you're spending gym time on without getting growth back.
+
+[T0068]  line 4678
+Between ${term("mev","MEV")} and MAV is where you want to live most of the time. Adding sets in this range keeps paying off.
+
+[T0071]  line 4684
+<b>The most a muscle can recover from. Past this, sets cost fatigue but stop buying growth.</b>
+
+[T0072]  line 4684
+Going over MRV doesn't just waste the extra sets, it digs a hole. Recovery debt accumulates, your loads on everything else start slipping, and joints and connective tissue take the strain. It usually shows up as strength going <em>backwards</em> while you're working harder than ever.
+
+[T0076]  line 4690
+Warm-ups and easy back-off sets don't count. Research on hypertrophy consistently shows the stimulus falls off sharply once you're more than about 4 reps from failure, so counting every set you performed would badly overstate your real training volume.
+
+[T0077]  line 4690
+Element 26 counts any set with reps logged as a working set, and uses your logged ${term("rpe","RPE")} to judge how hard it was. If you don't log RPE, it assumes a normal hard set (RPE 8) rather than throwing the set away.
+
+[T0078]  line 4690
+<b>Partial credit:</b> a muscle that assists gets a fraction of a set, not a whole one. A bench press pays 1.0 to chest, 0.5 to front delts and 0.5 to triceps. That's why the per-muscle numbers can look odd next to your session total, and why the whole-body tile counts real sets performed instead of summing the columns.
+
+[T0083]  line 4696
+The safe band. Load is progressing at a rate your body can absorb.
+
+[T0085]  line 4696
+A spike. This is the best-established injury marker in sports science, jumping load faster than your tissues adapt is what hurts people, more than the absolute amount.
+
+[T0086]  line 4696
+The practical read: it's not how much you do, it's how fast you <em>changed</em> how much you do. A 1.5× week is how a motivated Monday becomes a strained something on Thursday.
+
+[T0090]  line 4706
+Element 26 uses the Epley formula: <span class="num">weight × (1 + reps ÷ 30)</span>. So 100 lb × 10 reps estimates a 133 lb single.
+
+[T0091]  line 4706
+Why bother: it lets the app compare sets that aren't alike. 100×10 and 115×6 are hard to rank by eye, but as estimated 1RMs (133 vs 138) it's clear the second was stronger. That's how <b>${term("growth","growth")}</b> and <b>progressive overload</b> get measured when your reps move around week to week.
+
+[T0097]  line 4712
+<b>Reading the number:</b> 100% means you've just dumped a full ${term("mrv","MRV")} week's worth onto that muscle. Under 20% is fresh. Fatigue is not the same as ${term("recovery","recovery")}, see that entry for why both exist.
+
+[T0101]  line 4718
+<b>Why this isn't just the inverse of ${term("fatigue","fatigue")}:</b> they answer different questions. A muscle you hammered six days ago is <em>fully recovered</em> and ready to train, but a week of hard work can still leave fatigue residue on the books. One tells you if you can train it today; the other tells you whether the week is catching up with you.
+
+[T0102]  line 4718
+Your sleep and energy logs feed into this. Averaging under 6 hours of sleep drops every muscle's recovery, because sleep debt measurably slows tissue repair, that's not a per-muscle effect, so it shifts them all together.
+
+[T0104]  line 4724
+<b>Is this muscle actually progressing? Last 3 weeks against the 3 weeks before.</b>
+
+[T0109]  line 4724
+A stall with <em>adequate</em> volume is a different problem from a stall with too little, which is why weak point detection treats them separately: one needs a change of stimulus, the other needs more sets. Piling on volume to fix a fatigue-driven stall makes it worse.
+
+[T0121]  line 4734
+This is a training-load flag, not medical advice. It can't see your sleep quality, your joints, your technique or your history, and it can't predict an injury. Actual pain beats anything on this screen: if something hurts, treat that as the signal.
+
+[T0123]  line 4745
+<b>Giving your body slightly more to handle than last time. It's the one rule that makes training work.</b>
+
+[T0124]  line 4745
+Muscles adapt to what you ask of them. Ask the same thing every week and there's no reason to change. The load has to creep up.
+
+[T0134]  line 4745
+You only need <em>one</em> of them to move. Element 26 grades this by comparing your best ${term("e1rm","estimated 1RM")} on each exercise against the last time you did that workout.
+
+[T0135]  line 4745
+Progress is not linear. Beating every lift every week is not the standard, holding steady is fine, and going backwards for a week usually means fatigue, not failure.
+
+[T0139]  line 4758
+Failure is a tool, not a target. Sets taken to true failure build a little more per set, but they cost disproportionately more recovery and beat up your joints and connective tissue. Doing every set to failure is one of the most common ways people stall.
+
+[T0143]  line 4764
+Fatigue accumulates faster than you notice. After several hard weeks it starts masking your actual strength, you're stronger than your lifts suggest, you just can't express it. A deload lets the fatigue drain off so the strength shows up.
+
+[T0144]  line 4764
+The usual recipe: <b>keep the weights, cut the sets by about half</b>, and stop every set well short of ${term("failure","failure")}. Keeping the loads is what preserves the skill and the stimulus; cutting the sets is what buys the recovery.
+
+[T0148]  line 4770
+Your ab finisher is one: crunch → leg raise → crunch, straight through. Because there's no rest inside a superset, Element 26 doesn't start the rest stopwatch between those sets and doesn't grade them for ${term("restwindow","rest length")}.
+
+[T0149]  line 4770
+Supersetting two <em>unrelated</em> muscles, say calves and biceps, is close to free time saved. Supersetting the same muscle raises the difficulty a lot and cuts the weight you can use, so it's a tool for finishers rather than main lifts.
+
+[T0152]  line 4780
+When you can't complete another full rep, you keep going through the bottom portion only — the deepest part of a curl, the stretch at the bottom of a fly. The muscle is under load in its lengthened position, which is the part of the range most associated with growth.
+
+[T0154]  line 4780
+Element 26 counts the set as <b>one ${term("hardset","hard set")}</b>. The partials are extra work inside it, not extra sets.
+
+[T0157]  line 4786
+Take the set to failure, immediately cut the load — commonly 20-30% — and rep out again. Repeat for as many drops as the plan asks for.
+
+[T0158]  line 4786
+Log each drop under the set it belongs to. Element 26 counts the whole thing as <b>one ${term("hardset","hard set")}</b>: the drops add tonnage and fatigue, not set count. Counting a triple drop as three sets would overstate your weekly ${term("volume","volume")} against thresholds that were never measured that way.
+
+[T0161]  line 4791
+You take an activation set to roughly ${term("rpe","RPE")} 9, rest only 3-5 deep breaths, then do a mini-set of 3-5 reps. Repeat until you can't hit the target reps. The idea is to keep the muscle near the high-effort end of the set without re-doing the easy reps at the start.
+
+[T0164]  line 4796
+<b>Go to failure, rest 15-20 seconds, go again. Repeat.</b>
+
+[T0165]  line 4796
+Close relative of myo-reps, with slightly longer pauses and usually fewer bursts. Same purpose: more near-failure reps out of one load.
+
+[T0172]  line 4807
+A set with no rep target — you go until the reps stop. Plans use it on a final set to autoregulate: how many you get tells you whether the load is right, without the plan having to guess your exact strength on the day.
+
+[T0173]  line 4807
+Log what you actually got. That number is what the app reads for ${term("overload","progression")}.
+
+[T0175]  line 4812
+That's ${term("rpe","RPE")} 10 — not "it got hard", but a rep you attempted and could not finish. It buys a little extra stimulus per set and costs a lot more recovery, which is why most plans reserve it for the last set of an exercise, and why Element 26's ${term("mrv","MRV")} estimate drops when your average RPE climbs.
+
+[T0179]  line 4817
+Heavy sets, 6 reps or fewer, or anything at ${term("rpe","RPE")} 9.5+. Your strength systems genuinely take this long to reload.
+
+[T0181]  line 4817
+Normal 8-12 rep work. The bulk of what you do.
+
+[T0184]  line 4817
+Cutting rest short doesn't make a workout more productive, it just makes the next set lighter, which quietly caps the ${term("volume","volume")} you accumulate. If you're short on time, it's better to drop an exercise than to rush the ones you keep.
+
+[T0188]  line 4827
+Losing some is completely normal, around 25% across three sets is typical and healthy. Getting 10, then 9, then 8 means you judged the weight well.
+
+[T0189]  line 4827
+A steep drop, 12 then 6, almost always means one of two things: your ${term("restwindow","rest was too short")}, or your first set was too heavy and taken too close to ${term("failure","failure")}. Both leave your later sets contributing fatigue without much stimulus.
+
+[T0193]  line 4833
+Roughly 15-20 sets an hour is a brisk, focused session. Much under 12 usually means long gaps that aren't real ${term("restwindow","rest")}, phone, queuing for equipment, wandering.
+
+[T0197]  line 4838
+A dumbbell bench press counts as a full set for your chest, about half a set for your front shoulders, and about half for your triceps. Those muscles genuinely worked, but not nearly as hard as the chest did, and counting all three as full sets would make your weekly totals roughly triple what you actually did.
+
+[T0200]  line 4838
+How hard the muscle actually fires. EMG research consistently shows the target muscle working far harder than its assistants on the same lift.
+
+[T0202]  line 4838
+A muscle taken through a full stretch under load grows more than one working in a short range. This is why an overhead extension is worth more to the ${term("mev","triceps long head")} than a pushdown: only the overhead position actually lengthens it.
+
+[T0204]  line 4838
+If you are fighting to balance, the target muscle cannot be driven as hard. A machine row loads the lats more precisely than a bent-over row at the same effort.
+
+[T0206]  line 4838
+Compound lifts drain you systemically, not just locally. Ten sets of squats and ten of leg extensions do not cost the same, which is why the ${term("mrv","MRV")} calculation cares about your compound share.
+
+[T0210]  line 4838
+Where research gives a clear answer it wins over feel. Seated versus standing calf raises is the cleanest example: knee bent hits the ${term("mev","soleus")}, knee straight hits the gastrocnemius, and no amount of effort swaps them.
+
+[T0211]  line 4838
+The practical upshot: if a muscle only ever shows up as a fraction, it has no direct work in your programme. Assisting on other people's lifts is not the same as being trained.
+
+[T0213]  line 4852
+<b>Two different things get called "volume". Element 26 uses both, in different places.</b>
+
+[T0215]  line 4852
+The unit for ${term("mev","MEV")} / ${term("mav","MAV")} / ${term("mrv","MRV")} and everything on the Body tab. This is what the research on how much to train is expressed in.
+
+[T0220]  line 4859
+<b>RIR</b> is how many more reps you could have done when you stopped. It is the same idea as ${term("rpe","RPE")}, counted the other way up.
+
+[T0222]  line 4859
+The conversion is just subtraction: <span class="num">RPE = 10 − RIR</span>. A plan written in "2 RIR" and a plan written in "RPE 8" are asking for exactly the same set.
+
+[T0223]  line 4859
+<b>Why it matters.</b> Most of the growth in a set comes from the reps near your limit, and most of the fatigue comes from the ones past it. Stopping one to three short is where that trade is best for nearly everyone.
+
+[T0225]  line 4869
+<b>Hypertrophy</b> is muscle getting bigger. It's the goal most people mean by "building muscle", as opposed to purely getting stronger at a lift.
+
+[T0227]  line 4869
+<b>Why it matters here.</b> A plan aimed at size is judged on volume per muscle, which is what the Body tab measures. A plan aimed at strength would be judged on load instead, and would look "under-trained" on the same screen while working perfectly well.
+
+[T0229]  line 4873
+<b>Unilateral</b> means one limb at a time: a single-arm row, a split squat, a one-leg curl. <b>Bilateral</b> is both together — a barbell squat, a bench press.
+
+[T0230]  line 4873
+It matters for logging, because a set of a one-limb movement is a set for ONE side. Element 26 can mark each set L or R and alternate down the sets, so three sets runs right, left, right — which also means an odd set count is not equal work per side within a session.
+
+[T0231]  line 4873
+It matters for training, because sides drift apart quietly. Tracking them separately is the only way to notice, and matching the weaker side is one way to close a gap once you have.
+
+[T0233]  line 4877
+<b>Bilateral</b> means both limbs at once: a barbell bench press, a squat, a pulldown. The opposite is ${term("unilateral","unilateral")} work, one limb at a time.
+
+[T0234]  line 4877
+Nothing special happens to a bilateral movement here — one set is one set, and no sides are marked. It is worth knowing the word only because plans use it to say which of the two they mean.
+
+
+==========================================================================
+SET TECHNIQUES
+==========================================================================
+
+[T0345]  line 5387
+Go to failure, rest 15-20 seconds, then squeeze out more. Repeat.
+
+
+==========================================================================
+EXERCISE COACHING CUES
+==========================================================================
+
+[T0357]  line 5523
+Body in one line, chest to the floor. Elevate the feet once it gets easy.
+
+[T0359]  line 5527
+About 30 degrees. Touch just below the collarbone.
+
+[T0360]  line 5528
+Hands on a bench. Lower the surface as you get stronger.
+
+[T0374]  line 5552
+Dead hang to chest. Use a band for help if you need it.
+
+[T0414]  line 5619
+Ribs down, glutes tight. Log seconds in the reps box.
+
+[T0436]  line 5676
+Just outside the shoulders. Wider is not better.
+
+[T0437]  line 5677
+Palms toward you. More biceps than a pull-up.
+
+[T0451]  line 5703
+Step back, not forward. Easier on the knee.
+
+[T0456]  line 5710
+Light. Hinge back, soft knees, flat back.
+
+[T0457]  line 5711
+Round nothing. Squeeze the glutes at the top.
+
+[T0463]  line 5726
+Bent knee hits the soleus. Full stretch at the bottom.
+
+[T0466]  line 5731
+Palms facing in. Hits the brachialis and the forearm.
+
+[T0468]  line 5733
+Armpits into the top of the pad. Do not bounce out of the stretch.
+
+[T0482]  line 5751
+Curl the pelvis up. Legs alone is a hip flexor exercise.
+
+[T0483]  line 5752
+Same idea, easier. No swinging.
+
+
+==========================================================================
+EXERCISE NOTES AND FLAGS
+==========================================================================
+
+[T0566]  line 7752
+One tap. It only asks once per exercise, and knowing which of these it was is what stops the app giving you the wrong advice next time.
+
+
+==========================================================================
+ALTERNATING AND CHOICE SLOTS
+==========================================================================
+
+[T0605]  line 8408
+${ICON.pin || ""}<span>Those were at <b>${esc(away.name)}</b>, ${ esc(away.ago)} \u00b7 ${esc(fmtDate(away.date))}. Different bar, different stack \u2014 not necessarily a number to beat here.</span>
+
+[T0632]  line 8529
+Only really grows from INCLINE pressing. Flat benching mostly misses it.
+
+[T0635]  line 8530
+Flat presses and flyes. This is the biggest part of the pec.
+
+[T0644]  line 8534
+Lateral raises. This is the head that makes shoulders look wide.
+
+[T0647]  line 8535
+Rows and rear delt flyes only. Pressing does nothing for it.
+
+[T0653]  line 8538
+The only head that crosses the shoulder, so it is only fully stretched by OVERHEAD extensions. Pushdowns barely touch it.
+
+[T0656]  line 8539
+The visible horseshoe. Pushdowns and close-grip pressing.
+
+[T0665]  line 8542
+Almost always neglected. Reverse curls and wrist extensions.
+
+[T0671]  line 8545
+Rows and face pulls. Key for shoulder health.
+
+[T0679]  line 8548
+Pulldowns, pull-ups and rows. This is what gives a V shape.
+
+[T0702]  line 8558
+Hip thrusts, squats and RDLs. The strongest muscle you have.
+
+[T0708]  line 8560
+Squats and leg press. Usually the biggest quad head.
+
+[T0711]  line 8561
+It crosses the hip, so it needs the hip STRAIGHT. Leg extensions and sissy squats, not squats.
+
+[T0719]  line 8564
+Leg curls, especially lying. The most commonly strained muscle in the body.
+
+[T0729]  line 8568
+SEATED calf raises. A bent knee is the only way to load it properly, and most people never do.
+
+
+==========================================================================
+EXPERIENCE LEVEL AND VOLUME LANDMARKS
+==========================================================================
+
+[T0788]  line 9509
+Your set targets are not fixed numbers. They start from published population figures for each muscle group, then get scaled by five things the app can read from your own log, and finally by the length of the window they're counted over.
+
+[T0791]  line 9509
+The least weekly work that still grows the muscle. Below it you are maintaining.
+
+[T0792]  line 9509
+The productive range. Added sets keep paying off here.
+
+[T0793]  line 9509
+The most it can recover from. Past this you accumulate fatigue without growth.
+
+[T0800]  line 9538
+Head-level regions like the three triceps heads do not get their own thresholds. There is no research at that level and no exercise isolates a single head cleanly enough to aim at one. Heads are judged on their <b>share of the group's work</b> instead, which is a real and fixable problem.
+
+[T0848]  line 9815
+A prescription only counts once it's performed. Either those days are the ones getting dropped, in which case the work belongs on a day you reliably train, or the log is behind reality.
+
+[T0863]  line 9845
+Swap the main movement, slow the lowering phase to about 3 seconds, or take the top set one RPE closer to failure. Any of the three changes what the muscle is being asked to adapt to.
+
+[T0888]  line 9914
+Volume you can't recover from is volume you don't grow from: past this point the sets cost fatigue without buying adaptation, and connective tissue takes the strain. Hold the weights where they are, because dropping the load is what costs you the strength.
+
+
+==========================================================================
+ONBOARDING
+==========================================================================
+
+[T0891]  line 10006
+Get bigger. Moderate reps, plenty of volume.
+
+[T0892]  line 10008
+Lift heavier. Lower reps, longer rests.
+
+[T0893]  line 10010
+Keep the weights up while eating less. Same training, shorter rests.
+
+[T0894]  line 10012
+Feel good, move well, stay strong. Nothing extreme.
+
+[T0896]  line 10017
+A year or two of steady training. You know the main lifts.
+
+[T0897]  line 10018
+Several years in. You know how your own body responds.
+
+[T0901]  line 10111
+That recovery key doesn't look right. It's 32 letters and numbers, from Settings → Account on your other device.
+
+[T0903]  line 10138
+Couldn't reach the account service. Try again in a moment.
+
+[T0905]  line 10160
+This erases <b>everything</b> under <b>${esc(id)}</b> on this device — your plan, every logged workout, your history and your settings${ACCT.cloud ? ", and the copy stored against your account" : ""}. <br><br>There is no undo, and no way to recover it afterwards. If you only want to leave this device, sign out instead: your log stays and your ID gets you back in.
+
+[T0913]  line 10230
+Account created. This is its ID — the one thing worth keeping from this screen.
+
+[T0916]  line 10230
+Keep this ID private. Don't share it publicly.
+
+[T0917]  line 10230
+<b>Important — save this ID.</b> It's unique to your account, and you may need it to identify or recover your training data. A note or a password manager will do.
+
+[T0922]  line 10256
+Whatever your gym labels its plates in. This is what Element 26 will call every load it shows you, and it decides how big a sensible jump looks.
+
+[T0937]  line 10290
+Your training plans, workouts, history and settings, saved under one account. One field, four seconds.
+
+[T0947]  line 10337
+Couldn't create the account. Try again.
+
+
+==========================================================================
+WAKING UP, WEIGHT AND SLEEP
+==========================================================================
+
+[T0991]  line 10832
+Your Element 26 ID, so a reply can reach you. No workouts, loads or notes are sent.
+
+[T0999]  line 10936
+A report is filed against your account \u2014 that is how a reply reaches you, and it is what stops the inbox being an open text box on the internet. <b>Connect this account to the cloud</b> under Your account and it will send.
+
+[T1000]  line 10937
+The report service didn't recognise that address. It may need redeploying \u2014 your report is saved and will go the moment it does.
+
+[T1001]  line 10938
+The report service is having trouble. Your report is saved and it'll try again next time you open the app.
+
+[T1002]  line 10939
+No connection. Your report is saved and it'll go next time you open the app.
+
+[T1003]  line 10940
+That's a few reports in an hour. Your report is saved \u2014 it'll go through a bit later.
+
+[T1004]  line 10941
+Your account wasn't accepted by the service. Check you're signed in under Your account.
+
+[T1006]  line 10985
+Reminders need your account registered with the cloud service — something has to be awake to send them while the app is closed. Connect it above.
+
+[T1008]  line 10987
+<b>Add Element 26 to your Home Screen first.</b> On iOS, notifications only work for an app that's been installed — not for a site open in a Safari tab. Tap Share, then <b>Add to Home Screen</b>, and open it from there.
+
+[T1010]  line 10989
+Couldn't set that up. Check your connection and try again.
+
+[T1011]  line 10995
+Three at most, each one switchable on its own. Nothing is sent that isn't listed here.
+
+[T1016]  line 11025
+Which session is up, at an hour you choose. Skipped on a day you've already trained.
+
+[T1020]  line 11034
+A nudge to start the sleep clock at ${ sleepOff ? "your night-start time" : `<b>${esc(p.sleepTime || "22:30")}</b>` }, the hour the app already treats as your night — change it under <b>Sleep and mornings</b>. Not sent on a night you've already answered.
+
+[T1024]  line 11046
+To log the night while you can still remember it. Element 26 works out roughly when you get up from the mornings you've already logged — nobody has to set an alarm.
+
+[T1025]  line 11056
+Not yet — it needs ${WAKE_MIN_SAMPLES} logged mornings before it'll guess, and it won't guess before then. Set a fixed wake time under <b>Sleep and mornings</b> to skip the wait.
+
+
+==========================================================================
+SYNCING
+==========================================================================
+
+[T1032]  line 11121
+This account was created on this device and never registered with the account service \u2014 most likely the service could not be reached at the time. Nothing is being backed up.
+
+[T1040]  line 11148  ·  same text in 2 places
+Could not reach the account service. Check your connection and try again.
+
+[T1041]  line 11150
+The service rejected this account's ID and key. If you changed them elsewhere, sign in again.
+
+[T1043]  line 11156
+Reading your account worked, but writing to it did not. Nothing has been lost \u2014 this device still holds everything.
+
+[T1045]  line 11178
+The service is rate-limiting new accounts from this connection. Try again in an hour.
+
+
+==========================================================================
+THE FIRST-RUN TOUR
+==========================================================================
+
+[T1047]  line 11274
+One plate per day of your rotation. It moves forward when you TRAIN, not when the date changes — miss a Tuesday and nothing is lost, the cycle just takes longer to come round. R is a scheduled rest.
+
+[T1049]  line 11276
+The session the rotation has reached. Everything you log happens on this screen.
+
+[T1051]  line 11278
+"4×6-10 · RPE 7-9" is four sets of six to ten reps at RPE seven to nine. RPE is how close to failure: 10 is nothing left, 9 is one rep in you, 8 is two.
+
+[T1053]  line 11281
+Before you've logged anything these read "light", "build up" — placeholders, not instructions. Log one full session and they become real weights off your own load.
+
+[T1055]  line 11284
+During a session every set is a row like this one. Weight, reps, and how hard it felt \u2014 typed in as you finish the set, not remembered afterwards.
+
+[T1057]  line 11286
+Ticking is what saves the set and what tells Element 26 where you are. The reps you actually got are what next week's target is built from.
+
+[T1059]  line 11288
+Finishing a round starts your rest clock, at the rest your plan asks for. It runs on the clock, so it stays right with your phone in your pocket.
+
+[T1061]  line 11290
+Each finished session, scored on what could actually be measured. Tap one to see the sets as you logged them, or read its grade again.
+
+[T1063]  line 11292
+Anything under- or over-trained, each with a button that actually changes your plan. Below it: the flags your grades raised, and your own notes.
+
+[T1065]  line 11294
+Element 26 doesn't write programmes — it runs the one you brought. Everything here is editable.
+
+[T1067]  line 11296
+Your ID and recovery key, cloud sync, pounds or kilos. Advanced settings has how the app behaves — and this tour, whenever you want it again.
+
+[T1069]  line 11298
+Five tabs, and you've seen all of them. Start your session on Today whenever you're ready.
+
+[T1086]  line 11683
+You're all set. Your first workout is ready.
+
+[T1092]  line 11754
+Well past easing in. Element 26 will treat this as an established plan.
+
+[T1097]  line 11783
+Read off what you gave us. Check it over — every exercise, set count and rep range below is editable in the Program tab once you're in.
+
+[T1110]  line 11841
+Three notifications, at most, and each one can be turned off on its own. You can change all of this later in Settings.
+
+[T1111]  line 11843
+<b>Which session is up</b>, at an hour you pick. Skipped on a day you've already trained.
+
+[T1113]  line 11843
+<b>A prompt in the morning</b> to log the night. Element 26 works out roughly when you get up from the mornings you log — it won't guess before it has a few.
+
+[T1116]  line 11854
+Your first session is waiting on the Today tab. Tap an exercise, log your sets, and the app takes it from there.
+
+[T1117]  line 11855
+<b>Your plan is yours.</b> Everything the import read is editable in the Program tab, and nothing you log is ever changed by it.
+
+[T1119]  line 11855
+<b>Import again whenever your programme changes.</b> Program tab, top of the screen.
+
+
+==========================================================================
+IMPORTING A PLAN (READER AND QUESTIONS)
+==========================================================================
+
+[T1130]  line 12360
+Couldn't reach the plan reader. Check your connection and try again.
+
+[T1131]  line 12361
+Couldn't reach our servers. Check your connection and try again.
+
+[T1132]  line 12386
+The plan reader isn't switched on for this copy of the app — no key reached our servers. That's ours to fix, not yours.
+
+[T1133]  line 12388
+The plan reader isn't working right now — that's a problem at our end, not yours. Try again later, or enter your programme by hand in the Program tab in the meantime.
+
+[T1134]  line 12402
+The plan reader's address isn't answering (404, no detail). The proxy is probably not deployed. That's ours to fix.
+
+[T1137]  line 12403
+"). That's ours to fix.
+
+[T1138]  line 12406
+The plan reader is busy — it's had a lot of use today. Wait a few minutes and try again.
+
+[T1140]  line 12417
+That plan was too long to read in one go. Import a few days at a time.
+
+[T1141]  line 12421
+Our servers sent back something unreadable. Try again.
+
+[T1155]  line 12812
+Your plan doesn't say, which is completely normal. This only changes what the app compares you against — your plan itself is never altered.
+
+[T1158]  line 12816
+The usual answer. The app watches how much work each muscle gets.
+
+[T1160]  line 12817
+Heavier weights, fewer reps, longer rests. Judged on what you lift.
+
+[T1164]  line 12819
+Turn up, train, feel good. No pressure to push numbers.
+
+[T1166]  line 12829
+Getting a bit stronger over time is what makes training keep working — it's called ${term("overload","progressive overload")}. The app can spot when you've earned more weight. You choose what it does about it.
+
+[T1168]  line 12833
+You get a suggestion after the session with a button to accept it. Nothing changes on its own.
+
+[T1172]  line 12835
+You set every weight yourself. The app still tracks how you're doing.
+
+[T1174]  line 12846
+It's one tap on a 1-10 scale — trainers call it ${term("rpe","RPE")}. It's how the app can tell a genuinely hard session from one that just felt long. Entirely optional.
+
+[T1178]  line 12851
+Start with it switched on and the app will explain it as you go. You can turn it off whenever.
+
+[T1180]  line 12852
+Just weight and reps. The app never asks.
+
+[T1182]  line 12859
+Your plan doesn't say, so pick whichever sounds most like how you train. You can change it later.
+
+[T1184]  line 12864
+You could have done a couple more. Almost all of the benefit, far less of the wear.
+
+[T1186]  line 12865
+Genuinely hard. Works well, but you'll need to recover properly.
+
+[T1188]  line 12866
+Every set taken to ${term("failure","failure")}. Effective in small doses, draining in large ones.
+
+[T1190]  line 12867
+Easier on the big lifts, harder on the small ones. The app marks these as its choice, not your plan's.
+
+[T1192]  line 12880
+Your plan doesn't say. Heavy sets need longer than light ones, so the app can work it out for you — or you can keep it simple.
+
+[T1194]  line 12884
+Longer after heavy lifts, shorter after light ones. A timer counts down for you.
+
+[T1196]  line 12885
+One number after every set. You'll choose it on the next screen.
+
+[T1202]  line 12903
+Your plan lists only the real working sets. The app can add a few lighter sets before the big lifts to get you ready.
+
+[T1204]  line 12911
+A few lighter sets before your first big lift. They never count towards your training total, and you can switch this off any time.
+
+[T1206]  line 12912
+Only the sets your plan lists. You warm up however you like.
+
+[T1208]  line 12926
+Things like ${esc(shown)} work one side at a time. Your plan doesn't say how to record them, so how would you like to?
+
+[T1210]  line 12930
+Each set is one arm or leg, labelled L or R. Lets you see if one side falls behind.
+
+[T1214]  line 12932
+Simplest option. Do both sides, tick it off once.
+
+[T1216]  line 12937
+Whichever side goes first is the freshest, so it tends to do a little better. Swapping each time keeps it fair.
+
+[T1220]  line 12943
+Every session the same. Simpler to remember.
+
+[T1222]  line 12954
+Your plan uses a barbell for ${esc(bars.slice(0,3).join(", "))}. Both ways of counting are fine — the app just needs to know which one you use.
+
+[T1235]  line 12977
+A bar changes by twice this, so it sets the smallest increase the app will ever suggest. If you're not sure, pick the middle one.
+
+[T1281]  line 13027
+Your plan has ${n} workout${n===1?"":"s"} but doesn't say which days to do them. You don't have to stick to fixed weekdays — just take the rest days when you need them.
+
+[T1284]  line 13038
+Training hard for weeks on end catches up with you. An easy week — a ${term("deload","deload")} — lets that drain off so you come back stronger. Your plan doesn't schedule one.
+
+[T1286]  line 13042
+The app will mention it after about ${DELOAD_EVERY_WEEKS} weeks, or sooner if you seem run down. Starting one is always your call.
+
+[T1290]  line 13052
+This app records weights in pounds. It can convert your plan's numbers now, or leave them blank so you fill them in as you go.
+
+[T1294]  line 13056
+Rounded to the nearest 5 lb. Each converted weight says so, so you can check them.
+
+
+==========================================================================
+THE IMPORTER, SCREEN BY SCREEN
+==========================================================================
+
+[T1311]  line 13215
+This copy of Element 26 was published without a plan-reader key, so importing is off. Everything else in the app works normally, and you can enter your programme by hand in the Program tab.
+
+[T1312]  line 13215
+If this is your copy: deploy <b>proxy/gemini-worker.js</b> and put its URL in <b>AI_PROXY</b> at the top of index.html. That keeps the key server-side, which is the only way to publish this without publishing the key too. <b>proxy/README.md</b> is the five-minute version.
+
+[T1318]  line 13259
+Element 26 doesn't write training programmes, it runs the one you already have — a coach's PDF, a spreadsheet, a photo of the sheet in your gym bag. Hand it over and we'll take care of the setup.
+
+[T1339]  line 13367
+Nothing was imported and your current plan is untouched. This didn't count as an import — we stopped before reading the plan.
+
+[T1343]  line 13388
+You can carry on — anything we couldn't read is flagged before your plan is created, and you'll see every exercise first. Or attach a clearer copy.
+
+[T1348]  line 13455
+Picks the recommended answer for ${qs.length - i === 1 ? "this" : "every remaining"} question. All of them are ordinary settings you can change later.
+
+[T1350]  line 13480
+Everything's set. Have a look before we add it.
+
+[T1433]  line 14056
+Plan read. Have a look before you start.
+
+[T1435]  line 14062
+Your programme becomes <b>${esc(r.customSplit.name)}</b>, ${dayCount} training day${dayCount===1?"":"s"} a cycle. <br><br>Every workout you have already logged is kept exactly as it is — this only changes what you are asked to do from here on. The cycle restarts at day one.
+
+[T1443]  line 14104
+Plan added. It's all yours to edit.
+
+[T1471]  line 14260
+Kept exactly as your document wrote it${ m.weeks ? ", a " + m.weeks + "-week programme" : ""}. Element 26 tracks your sessions; these are the instructions it read and is holding on to for you.
+
+
+==========================================================================
+SETTINGS
+==========================================================================
+
+[T1473]  line 14306
+What your gym labels its plates in. Nothing you have already logged is converted \u2014 the numbers stay as you typed them.
+
+[T1477]  line 14309
+Do you log the bar plus the plates, or just the plates? Warm-ups are worked out from this.
+
+[T1482]  line 14321
+<b>Regular</b> shows the whole session. <b>Focus</b> shows one exercise at a time with bigger buttons, for the gym floor.
+
+[T1486]  line 14327
+A ramp before the first big lift of the day. Warm-ups never count as working sets either way.
+
+[T1494]  line 14333
+<b>Automatic</b> writes the increase into your plan the moment a session earns it. <b>Ask</b> offers it with a one-tap Apply.
+
+[T1499]  line 14337
+<b>Separately</b> marks each set L or R. <b>Match weaker</b> also holds both sides to what the weaker one manages. <b>Together</b> counts one set as covering both.
+
+[T1512]  line 14349
+The short notes explaining how a movement is run. They stop on their own once you've logged a session.
+
+[T1528]  line 14414
+Currently <b>${esc(splitName())}</b>. Changing this rebuilds which days are in your rotation. Your logged history is kept exactly as it is.
+
+[T1529]  line 14425
+Switching keeps every exercise you have already set up on any day the two schedules share. Days that only exist in the new schedule start empty for you to fill in.
+
+
+==========================================================================
+THE CYCLE STRIP
+==========================================================================
+
+[T1553]  line 14763
+Tap a name to switch. Everyone keeps their own workouts, program and history, the GitHub token is shared once, so there's nothing to paste when you swap.
+
+[T1554]  line 14766
+You have a workout in progress. Finish or discard it first, that keeps the sets from landing on the wrong person's log.
+
+[T1564]  line 14821
+" from this device? Their gist is NOT deleted, you can re-add them later with the same gist ID and everything comes back.
+
+[T1571]  line 14841
+Bringing an existing client onto this device? Paste their gist ID here and their full history loads in straight away. The ID is the long string at the end of the gist's URL, <span class="num" style="font-size:12px">gist.github.com/you/<b>a1b2c3d4...</b></span>, not your username.
+
+[T1573]  line 14841
+Each person gets their own key. If you use a <b>separate token per gist</b>, put the matching one here, otherwise the wrong key gets sent and their history comes back empty. Leave it blank to use your shared token.
+
+
+==========================================================================
+DAILY CHECK-IN AND SLEEP ENTRY
+==========================================================================
+
+[T1588]  line 15130
+Started at <b>${esc(since)}</b>${ hrs >= 0.5 ? ", " + fmtHrs(hrs) + " ago" : ""}. Open Element 26 when you wake up and it'll ask if you've just got up, then work out exactly how long you slept.
+
+[T1592]  line 15155
+Tap good night and Element 26 starts the clock. When you open it in the morning it'll ask if you've just woken up, and work out exactly how long you slept \u2014 no guessing at a number over breakfast.
+
+[T1596]  line 15184
+Won't ask at night. Change it in Settings.
+
+
+==========================================================================
+TODAY TAB AND WORKOUT LOGGING
+==========================================================================
+
+[T1597]  line 15226
+Element 26 can tell you which session is up, remind you to start the sleep clock at night, and ask how you slept in the morning. Three notifications at most, each one switchable on its own, and nothing else is ever sent.
+
+[T1602]  line 15253
+Won't ask again. They're in Settings if you change your mind.
+
+[T1613]  line 15374
+How you feel right now, in one tap. It's what your recovery number is adjusted by, and it's why a flat session gets read as a flat day rather than a bad lift.
+
+[T1616]  line 15442
+Nothing needs fixing. Repeat it, one small step heavier.
+
+[T1631]  line 15577
+You've trained today, so today isn't it \u2014 your rest lands tomorrow. After that the rotation picks up with <b>${esc(m.name)}</b>.
+
+[T1639]  line 15687
+Started ${new Date(a.startedAt).toLocaleTimeString([],{hour:"numeric",minute:"2-digit"})}. Fill sets as you go, tapping ✓ on an empty row copies last time's numbers. Tap <span class="rpe-help">RPE</span> anywhere to see what it means.
+
+[T1653]  line 15773
+<b>Match the weaker side.</b> Same rep count both sides, set by whichever is weaker. <span class="asym-note">${esc(st.reason)}.</span>
+
+[T1654]  line 15777
+<b>Sides are level</b> at about ${r1(st.R.reps)} reps. <span class="asym-note">${esc(asymSampleText(st))}.</span>
+
+[T1655]  line 15781
+<b>Cap both sides at ${cap} reps.</b> ${esc(asymGapText(st))} <span class="asym-note">${esc(asymSampleText(st))}.</span>
+
+
+==========================================================================
+COACHING HINTS AND RPE TARGETS
+==========================================================================
+
+[T1699]  line 16228
+Anything worth knowing about this one today? It's kept with the session, shows up in your Body tab, and the grade reads it before deciding whether a lighter day was really a step backwards.
+
+[T1706]  line 16424
+You've been through every exercise on today's card. Finish the workout to save it and get your feedback.
+
+[T1719]  line 16624
+Doing ${esc(name)} instead. This is kept with the session so the log still makes sense months from now \u2014 skip it if you'd rather not.
+
+
+==========================================================================
+HISTORY AND ATTRIBUTION
+==========================================================================
+
+[T1784]  line 17149
+<span>The <b>${heads.length} parts</b> of your ${esc(gName(g).toLowerCase())}. Tap one for what it is and how to train it.</span>
+
+
+==========================================================================
+BODY TAB
+==========================================================================
+
+[T1790]  line 17224
+Train light today, or take it off. Backing off for one session costs nothing; training through this is how niggles start.
+
+[T1797]  line 17234
+Train as normal. You've stepped up quickly, so keep an eye on how you pull up over the next few days rather than adding more on top.
+
+[T1798]  line 17235
+A normal session is fine. Hit your usual numbers rather than chasing a personal best today.
+
+[T1801]  line 17239
+Good day to train hard. If a lift has felt ready to go up, today is the day to try it.
+
+[T1864]  line 17496
+<b>Load change ${t.acwr.toFixed(2)}\u00d7</b> compares this week against your last four. Over 1.5\u00d7 is a jump big enough to be worth noticing.
+
+[T1869]  line 17496
+Train a few more times and this will start pointing out anything that needs attention. It needs about a week of sessions before it can tell a real gap from a workout that hasn't come round yet.
+
+[T1870]  line 17496
+Nothing needs fixing. Every muscle is getting a sensible amount of work and nothing is being overdone.
+
+[T1873]  line 17496
+Counted over ${esc(win.label)}. Change that in Settings.
+
+[T1876]  line 17496
+Nothing outstanding. Everything the grades have flagged has been dealt with.
+
+[T1884]  line 17496
+<b>The four-week re-test is due.</b> It measures each movement on a balanced window and retires the rule wherever the gap has closed to within ${ASYM_CLOSED_GAP} rep${ASYM_CLOSED_GAP===1?"":"s"}.
+
+[T1888]  line 17496
+Nothing yet. Tap \u270e on any exercise during a workout to note how it felt \u2014 "form felt off", "equipment felt different", anything. Those notes turn up here, and your next grade uses them to explain a number instead of quietly marking you down.
+
+[T1889]  line 17496
+Read as context, never as an instruction. A note explains a number \u2014 it does not change your loads on its own.
+
+[T1898]  line 17496
+${esc(gName(g))} sets are reduced and the effort target is capped for another ${daysLeft} day${daysLeft===1?"":"s"}. Your saved plan is untouched \u2014 this lifts on its own.
+
+[T1902]  line 17496
+This one isn't something the app can change for you \u2014 it's about which sessions you actually get to, or it needs a movement choosing. Open ${esc(gName(g))} below, or edit the day in <b>Program</b>.
+
+[T1912]  line 17496
+Volume targets only exist at group level; there's no research at head level, and no exercise isolates a single head cleanly enough to aim at one. Heads are judged on their share of the group's work instead.
+
+[T1913]  line 17496
+<span class="md-k">What it is</span><span>Part of your <b>${esc(G.name.toLowerCase())}</b>. Also called the ${esc(R.tech)}.</span>
+
+[T1927]  line 17496
+Every day you've rested, across all cycles. Add or remove rest days in <b>Settings</b>.
+
+[T1930]  line 17496
+Days the rotation had a session on that went unlogged. They cost you no rest day and hold no place in the cycle \u2014 the workout is still waiting.
+
+[T1940]  line 17496
+The whole schedule as a document: every day, every exercise, sets, reps, RPE, loads, the ⇄ pairs, and what each muscle gets per cycle. Print it, save it as a Word file, or hand it to a coach.
+
+[T1944]  line 17496
+No finisher. Core work is placed on specific days in your plan rather than taxing every session.
+
+[T1951]  line 17496
+Pulls anything newer from your account first, then uploads this device. Your log is never replaced by an older copy.
+
+[T1952]  line 17496
+<b>Registering it changes your User ID.</b> The service mints IDs itself \u2014 a copy of the app that could claim any ID it liked could claim yours \u2014 so connecting this account gets a new one. <b>Everything on this device is kept</b> and uploaded as soon as it connects: your plan, every session, your settings. You will be shown the new ID and key, and the old ID stops being usable.
+
+[T1958]  line 17496
+What Element 26 is set to, and what each one is doing. Tap one to change it.
+
+[T1960]  line 17496
+Twelve steps on how the app works — cycles, rep ranges, RPE, logging a set, grades. About a minute, and it changes nothing.
+
+[T1962]  line 17496
+If the app does something it shouldn't, say so. It goes to whoever maintains Element 26 with the version you're on and any errors the app caught — never your workouts.
+
+[T1968]  line 17496
+Keep both private. You need the ID <b>and</b> the key to sign in somewhere else — the ID on its own identifies the account and never opens it.
+
+[T1984]  line 17496
+This deletes your plan and every workout you have logged on this device. Your account itself stays — sign in again and you start empty. To remove the account as well, use <b>Delete account</b> under Your account.
+
+[T1990]  line 17496
+Nothing has been lost. This device still holds your full log either way.
+
+[T1994]  line 17496
+Everything on this device ${r.pushed ? "has been uploaded to your account" : "will upload on the next sync"}. This is your new ID and key — the old ID (${esc(r.oldId)}) no longer opens anything.
+
+[T1995]  line 17496
+<b>Save both.</b> You need the ID and the key together to sign in on another device. They are always in Setup → Account.
+
+[T2001]  line 17496
+Element 26 can note where you are when you start a session. Then when you train somewhere else \u2014 travelling, a second gym, a hotel rack \u2014 it notices, asks, and files that session under the right place instead of comparing it to your usual bar.
+
+[T2002]  line 17496
+One reading when you tap Start, nothing in between. It is kept in your own log, compared only against your own gyms, and never sent anywhere. You can turn it off and delete your gyms in Advanced settings.
+
+[T2010]  line 17496
+Optional, and you can do it mid-session by tapping the name of the lift you're on. Whatever you set here is remembered for ${esc(g.name)} and put back automatically next time you train here.
+
+[T2022]  line 17496
+${unknown === 1 ? "One exercise on this day isn't" : unknown + " exercises on this day aren't"} mapped to a muscle, so ${unknown === 1 ? "its sets don't" : "their sets don't"} reach the Body tab. Set what ${unknown === 1 ? "it trains" : "they train"} and every session counts from then on.
+
+[T2029]  line 17496
+Element 26 couldn't place this one confidently. Until it knows, its sets are not counted anywhere — set what it trains and every session counts from then on, including ones already logged.
+
+[T2033]  line 17496
+Only the movement changes. <b>Sessions you have already logged keep the old one</b>, so its history stays its own rather than being handed to the new exercise.
+
+[T2037]  line 17496
+The note on this slot — “${esc(e.note)}” — was about ${esc(e.name)}, so it goes with it. Write a new one if the replacement needs one.
+
+
+==========================================================================
+THE DAY EDITOR, SWITCHING AND ADDING
+==========================================================================
+
+[T2050]  line 20914
+How the sets are taken. Most exercises are straight sets — the technique ones apply to the last set unless the plan says otherwise.
+
+[T2055]  line 20937
+Your plan offers both and either is fine. The workout card lets you pick, and remembers what you picked last.
+
+
+==========================================================================
+WORKOUT QUALITY SCORE
+==========================================================================
+
+[T2074]  line 22066
+This is the first session on record for every movement in it, so the grade below is a description of what you did — not a judgement of how it is going. Nothing here can see a trend yet.
+
+[T2075]  line 22068
+There is not much history behind these movements yet. The score is real, but the conclusions are early reads rather than findings, and they get firmer every session.
+
+
+==========================================================================
+PROGRESSIVE OVERLOAD AND STALLS
+==========================================================================
+
+[T2099]  line 23427
+Cut from the end, in this order: <b>${esc(t.drop.map(e=>e.name).join(", "))}</b>. The compounds at the front are the ones that matter; sleep is the constraint everything else is competing with.
+
+[T2100]  line 23430
+Even trimmed this will not fit. Train tomorrow rather than borrowing the hours from sleep.
+
+
+==========================================================================
+BARS, PLATES AND ROUNDING
+==========================================================================
+
+[T2114]  line 24084
+Comes straight after <b>${esc(info.partner)}</b>. Rest after this one.
+
+
+==========================================================================
+TECHNIQUE BADGES AND SUPERSETS
+==========================================================================
+
+[T2158]  line 25017
+A <b>404</b> means GitHub can't see that gist with this token. Two things to check: the gist ID is the long hex string at the end of the gist's URL (not the username), and the token belongs to the account that owns the gist.
+
+[T2159]  line 25019
+A <b>401</b> means the token is invalid or expired. Make a fresh classic token with the <b>gist</b> scope ticked.
+
+[T2160]  line 25021
+A <b>403</b> means the token is missing the <b>gist</b> scope, or you've hit GitHub's rate limit. Wait a minute, then check the scope.
+
+
+==========================================================================
+THE PRINTED PLAN DOCUMENT
+==========================================================================
+
+[T2175]  line 25459
+The programme was edited <b>${changes.length}</b> time${changes.length===1?"":"s"} over this period. Each edit is shown in place, between the sessions it sits between, so a change in the numbers after one of them can be read against it. Edits made before ${longDate(changes[0].date)} were not recorded.
+
+
+==========================================================================
+AI INSTRUCTIONS — SENT TO THE PLAN READER, NEVER SHOWN ON SCREEN
+==========================================================================
+
+[T2198]  line 12026
+You are screening a document for a training-log app. You are NOT extracting anything and you must not transcribe the plan. Your only job is to decide whether this document is a readable, usable weight-training programme.
+
+[T2207]  line 12038
+'reject' — not usable. Use this for anything unreadable, blank, corrupted, not a training plan, or a training document with no exercises, no sets/reps and no structure to work from. Also use it when the quality is so poor that anything extracted would be guesswork.
+
+[T2208]  line 12039
+'questionable' — might be usable, but something is materially wrong: only part of it is legible, it is a fragment of a larger programme, the structure is unclear, exercises are named without any sets or reps, or it mixes a plan with a lot of unrelated material. Say precisely what is wrong.
+
+[T2210]  line 12042
+'summary' is one plain sentence describing what the document actually is, written to the person who uploaded it. 'problems' lists what is wrong, one short sentence each, empty if nothing is. 'needed' says what you would need instead, and is only used when the verdict is not 'ok'.
+
+[T2211]  line 12044
+Never be polite at the cost of being accurate. Rejecting a document costs somebody one upload; accepting a bad one costs them a training plan invented out of nothing.
+
+[T2213]  line 12074
+YOUR ONE JOB IS TRANSCRIPTION. Everything you output must be traceable to something the document says. You are not writing a programme, improving one, or filling in what a good coach would have written. Where the document is silent, SAY NOTHING — leave the field out, leave the array empty, and set the matching flag in 'stated' to false. The app asks the person about anything you leave open, which is always better than you guessing on their behalf.
+
+[T2240]  line 12109
+'stated' is how the app knows what to ask about. Set each flag true ONLY if the document really addresses that topic anywhere: warmups, rest, effort (RPE/RIR/failure targets), progression, schedule (which days, how many rest days), deload, sideHandling, tempo.
+
+[T2241]  line 12111
+EXERCISE NAMES. Where a movement matches one in this list, use the list's exact spelling. Where it does not, keep the document's own name, tidied to title case. Never substitute a similar movement for one that isn't in the list.
+
+[T2242]  line 12114
+If the input turns out not to be a readable training plan after all, set 'understood' to false and put one plain sentence in 'problem'. Do not guess a plan into existence.
+
+[T2243]  line 12116
+'warnings' is anything you had to assume, could not read, or deliberately left out, one short sentence each. Be specific: 'week 3 column was cut off', not 'some parts unclear'.
+
+[T2258]  line 13972
+You are matching exercise names to a fixed list. For each name you are given, answer with the entry from the list that is THE SAME MOVEMENT, or an empty string if none of them is.
+
+[T2259]  line 13974
+Same movement means the same joint action on the same equipment. 'DB Incline Press' is 'Dumbbell Incline Press'. 'Seated Cable Row (neutral grip)' is 'Seated Cable Row'. 'Zercher Good Morning' is NOT 'Good Morning' if the list has no Zercher entry and the loading is what makes it different — leave it empty rather than approximating.
+
+[T2260]  line 13976
+An empty answer is a perfectly good answer and much better than a near-miss: a wrong match sends a person's logged sets to the wrong muscle for months. Set 'sure' false if you are guessing, and prefer empty over an unsure guess.

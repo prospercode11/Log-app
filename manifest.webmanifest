@@ -1,0 +1,16 @@
+{
+  "name": "Element 26",
+  "short_name": "Element 26",
+  "description": "A training log that reads what you lift and tells you what to change.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#0e0e10",
+  "theme_color": "#0e0e10",
+  "icons": [
+    { "src": "icon192v2.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "icon512v2.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "icon512v2.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}

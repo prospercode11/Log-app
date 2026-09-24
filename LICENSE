@@ -1,0 +1,30 @@
+Copyright (c) 2026 the Element 26 authors. All rights reserved.
+
+WHAT THIS IS FOR, PLAINLY
+
+This repository is public so that the app can be served from GitHub Pages and so that
+anyone can see how it works. It is not published for reuse. No permission is granted to
+copy, modify, redistribute, host, or make derivative works of this software, in whole or
+in part, for any purpose.
+
+Two exceptions, because they are what a public repository is for:
+
+  1. Reading it. Look at it, learn from it, quote it in a discussion, point at it.
+  2. The rights GitHub's own Terms of Service grant every user of a public repository —
+     viewing and forking it within GitHub. Forking is not a licence to publish.
+
+WHAT A LICENCE CANNOT DO, AND IT IS BETTER TO SAY SO
+
+Element 26 is a web app. Every line of it is delivered to a browser in order to run, so
+anybody who loads the page already has the source, and no licence, minifier or obfuscator
+changes that. This file states terms; it does not enforce them, and it should not be
+mistaken for a technical control.
+
+The things that actually need protecting are not protected by this file either. They are
+protected by design: the API keys live as Cloudflare Worker secrets and appear nowhere in
+this repository, the Workers refuse any origin but the published site's, and a person's
+training data is reachable only with both halves of their credential. A copy of this app
+hosted somewhere else is a copy of the front end and nothing more — it cannot reach the
+account service, it cannot read anybody's log, and it cannot spend anybody's API quota.
+
+For any other use, ask.
