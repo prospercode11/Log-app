@@ -13,13 +13,12 @@ python3 -m http.server 8000
 
 ## Deploy
 
-- **App:** serve the repo root as static files (e.g. GitHub Pages → Settings → Pages →
-  Deploy from branch → `main` / root).
-- **Plan-reader proxy and account service:** two Cloudflare Workers in `proxy/`, set up with
-  `wrangler.toml` and `wrangler.accounts.toml`. Full steps are in [`proxy/README.md`](proxy/README.md).
-  Add the origin you serve the app from to `ALLOWED_ORIGINS` in both
-  `proxy/gemini-worker.js` and `proxy/accountworker.js`, and point `AI_PROXY` / `E26_API`
-  in `index.html` at your Worker URLs.
+- **App:** static files, deployed on Vercel from this repo (every push redeploys). Any
+  static host works; if you use a new domain, add it to
+  `supabase/functions/_shared/origins.ts` and redeploy the functions.
+- **Backend:** Supabase: accounts and cloud sync, push reminders, and the AI plan reader.
+  See [`supabase/README.md`](supabase/README.md). The plan reader needs a Gemini API key
+  set server-side; everything else works out of the box.
 
 ## Copy tooling
 

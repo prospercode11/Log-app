@@ -5319,7 +5319,7 @@ body.cele-open{overflow:hidden}
      browser in order to run, so anyone can read it, save it and host it themselves; no
      amount of obfuscation changes that, because the browser has to be handed the working
      version. What protects the things that actually matter is elsewhere and is real: the
-     API keys live as Worker secrets and never touch this file, and both Workers refuse
+     API keys live as server-side secrets and never touch this file, and both functions refuse
      any Origin but this one, so a copy hosted anywhere else cannot reach the account
      service or the plan reader at all.
 
@@ -5618,11 +5618,11 @@ const APP_VERSION = "27.7";
    There are two ways to wire this up, and only one of them is safe to publish.
 
    ── 1. A PROXY (do this) ───────────────────────────────────────────────
-   `proxy/gemini-worker.js` in this repo is a ~60-line Cloudflare Worker that holds the
+   `supabase/functions/e26-gemini` in this repo is a Supabase Edge Function that holds the
    key server-side and forwards requests to Google. Deploy it, put its URL in AI_PROXY,
    and THE KEY NEVER REACHES THE BROWSER. Nothing to find in the page source, nothing
    for a scanner to report, nothing to rotate when someone views source.
-   `proxy/README.md` is the five-minute deploy.
+   `supabase/README.md` is the deploy.
 
    ── 2. THE KEY IN THIS FILE (local testing only) ───────────────────────
    AI_KEY works, and it is genuinely simpler, but understand exactly what it costs: this
@@ -5653,7 +5653,7 @@ const APP_VERSION = "27.7";
    screening pass costs the screening request only and never reaches the extraction,
    which is the cheap half of why the importer checks first.
    ===================================================================== */
-const AI_PROXY = "https://element26-gemini.ferbyablon.workers.dev";
+const AI_PROXY = "https://yqbqzuskzxcmsvgtfwsp.supabase.co/functions/v1/e26-gemini";
 const AI_KEY   = "";     // local testing only — see above before publishing this set
 /* The model the app ASKS for. Google retires names per-key on its own schedule, so
    this is a preference rather than a guarantee: if it has gone, or if THIS SPECIFIC
@@ -8581,10 +8581,10 @@ function defaultProgram(){
    configured, but it is not part of signing up, it is not how you are identified, and a
    new user never meets it.
    ===================================================================== */
-/* ►►► OPTIONAL. The account Worker's URL, if you deployed one. Empty = local accounts.
-   See proxy/accountworker.js and proxy/README.md. Never put a key or token here: this
+/* ►►► OPTIONAL. The account service's URL, if you deployed one. Empty = local accounts.
+   See supabase/functions/e26-accounts and supabase/README.md. Never put a key or token here: this
    file is public, and the Worker exists precisely so that credentials are not in it. */
-const E26_API = "https://element26-accounts.ferbyablon.workers.dev";
+const E26_API = "https://yqbqzuskzxcmsvgtfwsp.supabase.co/functions/v1/e26-accounts";
 
 const ACCT_KEY = "e26.account";
 /* Which account owns the ORIGINAL, un-namespaced storage on this device. Recorded once,
@@ -14614,10 +14614,10 @@ function accountAuth(){
    See the push handler in sw.js.
 
    ►►► SET THIS to the VAPID public key you generated (`npx web-push generate-vapid-keys`).
-   It is a PUBLIC key and belongs in a public file — the private half goes to the Worker
-   with `wrangler secret put VAPID_PRIVATE_KEY` and never appears here. Leave it empty and
+   It is a PUBLIC key and belongs in a public file — the private half lives server-side
+   in Supabase (public.e26_config) and never appears here. Leave it empty and
    the whole feature hides itself. */
-const VAPID_PUBLIC = "BFCaXprfPnrLoWaIWyr8fHHPXmrP4kCVwJk39Bq2WoKalzJGo6zihVz9-PSNKdoIYfbpeG7RIMN1PmM161SGF5k";
+const VAPID_PUBLIC = "BJaxuqCpDjknjqn9XxVVxCCMqmw-C76zGL6gC9XMe_2GfmgzP8Leo9XcnpA9milpP3r7rEF_TNJkE9W4by0ZeaM";
 
 function pushSupported(){
   return typeof navigator !== "undefined" && "serviceWorker" in navigator
@@ -17869,10 +17869,10 @@ function aiImportHTML(){
       <p>This copy of Element 26 was published without a plan-reader key, so importing is
       off. Everything else in the app works normally, and you can enter your programme by
       hand in the Program tab.</p>
-      <div class="ai-note">If this is your copy: deploy <b>proxy/gemini-worker.js</b> and put its
+      <div class="ai-note">If this is your copy: deploy <b>supabase/functions/e26-gemini</b> and put its
       URL in <b>AI_PROXY</b> at the top of index.html. That keeps the key server-side, which is the
-      only way to publish this without publishing the key too. <b>proxy/README.md</b> is the
-      five-minute version.</div>
+      only way to publish this without publishing the key too. <b>supabase/README.md</b> has the
+      steps.</div>
       <button class="btn" id="closeModal">Close</button>`;
   }
   if(a.stage === "processing") return aiProcessingHTML();

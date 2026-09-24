@@ -1,0 +1,9 @@
+project_id = "yqbqzuskzxcmsvgtfwsp"
+
+# Both functions do their own authentication (the E26 id.key credential, the origin
+# allow-list, the cron secret), and browsers call them without a Supabase JWT.
+[functions.e26-accounts]
+verify_jwt = false
+
+[functions.e26-gemini]
+verify_jwt = false

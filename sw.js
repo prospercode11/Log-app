@@ -28,7 +28,7 @@
  * the background for next time. The cost is that an update lands one launch late, which
  * is why the page is told when that happens instead of being left to wonder.
  */
-const VERSION = "21.1";
+const VERSION = "21.2";
 const SHELL = "e26-shell-v" + VERSION;
 const RUNTIME = "e26-runtime-v" + VERSION;
 
@@ -47,8 +47,7 @@ const SHELL_URLS = [
 /* Hosts whose responses must always come from the network. Checked by hostname rather
    than by matching the whole URL, so a Worker moving to a custom domain is one line. */
 const NEVER_CACHE = [
-  "element26-gemini.ferbyablon.workers.dev",
-  "element26-accounts.ferbyablon.workers.dev",
+  "yqbqzuskzxcmsvgtfwsp.supabase.co",
   "generativelanguage.googleapis.com"
 ];
 const FONT_HOSTS = ["fonts.googleapis.com", "fonts.gstatic.com"];
@@ -121,7 +120,7 @@ self.addEventListener("message", event=>{
    push handled without showing one as abuse, and Safari in particular will drop the
    subscription for it. So every path below ends at showNotification(), including the
    ones where the fetch failed and we genuinely do not know what to say. */
-const PUSH_API = "https://element26-accounts.ferbyablon.workers.dev";
+const PUSH_API = "https://yqbqzuskzxcmsvgtfwsp.supabase.co/functions/v1/e26-accounts";
 const PUSH_TOKEN_CACHE = "e26-push";
 const PUSH_TOKEN_URL = "./__e26_push_token";
 
